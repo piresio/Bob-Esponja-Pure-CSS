@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>SpongeBob SquarePants Sexy CSS</title>
+<meta content="Pequena brincadeira, criação do Bob Espoja utilizando apenas CSS" name="description">
+<meta content="Alexandre Graffitti" name="author">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta content="ie=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="index, follow" name="robots">
+<link rel="shortcut icon" href="http://graffitti.com.br/images/favicon.ico">
+<meta content="website" property="og:type">
+<meta content="http://graffitti.com.br/images/bob-facebook.png" property="og:image">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	padding-top: 100px;
+	background: #feff01;
+}
+.face {
+	width: 800px;
+	margin: 0 auto;
+}
+.face .left, .face .right {
+	display: inline-block;
+}
+.eyes {
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 10px solid #373435;
+	position: relative;
+	z-index: 2;
+	-webkit-animation: eyes 3s infinite step-start 0s;
+	-moz-animation: eyes 3s infinite step-start 0s;
+	-o-animation: eyes 3s infinite step-start 0s;
+	-ms-animation: eyes 3s infinite step-start 0s;
+	animation: eyes 3s infinite step-start 0s;
+}
+.iris {
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	background-color: #6fc0ed;
+	border: 10px solid #373435;
+	display: block;
+	margin: 70px auto;
+	-webkit-animation: iris 3s infinite step-start 0s;
+	-moz-animation: iris 3s infinite step-start 0s;
+	-o-animation: iris 3s infinite step-start 0s;
+	-ms-animation: iris 3s infinite step-start 0s;
+	animation: iris 3s infinite step-start 0s;
+}
+.pupil {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #373435;
+	display: block;
+	margin: 50px auto;
+	-webkit-animation: pupil 3s infinite step-start 0s;
+	-moz-animation: pupil 3s infinite step-start 0s;
+	-o-animation: pupil 3s infinite step-start 0s;
+	-ms-animation: pupil 3s infinite step-start 0s;
+	animation: pupil 3s infinite step-start 0s;
+}
+.cilia {
+	width: 350px;
+	position: absolute;
+	z-index: 1;
+	margin-top: -395px;
+}
+.cilia div {
+	width: 14px;
+	height: 60px;
+	background-color: #373435;
+	display: inline-block;
+}
+.cilia div:nth-child(1){
+	margin: 0 0 0 90px;
+-moz-transform: scale(1) rotate(-30deg) translateX(-30px) translateY(0px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(-30deg) translateX(-30px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(-30deg) translateX(-30px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(-30deg) translateX(-30px) translateY(0px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(-30deg) translateX(-30px) translateY(0px) skewX(0deg) skewY(0deg);}
+.cilia div:nth-child(2){
+	margin: -10px 0 0 62px;
+	position: absolute;
+	
+}
+.cilia div:nth-child(3){
+	margin-left: 135px;
+-moz-transform: scale(1) rotate(30deg) translateX(30px) translateY(0px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(30deg) translateX(30px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(30deg) translateX(30px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(30deg) translateX(30px) translateY(0px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(30deg) translateX(30px) translateY(0px) skewX(0deg) skewY(0deg);}
+.nose {
+	width: 170px;
+	height: 100px;
+	border-radius: 40% / 50% 70%;
+	border: 10px solid #373435;
+	position: absolute;
+	border-left: none;
+	-moz-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(-02deg) skewY(-32deg);
+	-webkit-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(-02deg) skewY(-32deg);
+	-o-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(-02deg) skewY(-32deg);
+	-ms-transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(-02deg) skewY(-32deg);
+	transform: scale(1) rotate(20deg) translateX(0px) translateY(0px) skewX(-02deg) skewY(-32deg);
+	position: absolute;
+	margin: -65px 0 0 310px;
+	z-index: 10;
+	background: #feff01;
+}
+.tip-nose-in {
+	background: #feff01;
+	height: 85px;
+	width: 100px;
+	border-radius: 50%;
+	margin: 3px 0 0 -20px;
+}
+.cheek {
+	position: absolute;
+	margin: -30px 0 0 0;
+	z-index: 3;
+	border: 10px solid #da2b37;
+	width: 250px;
+	height: 230px;
+	border-radius: 50%;
+	background: #feff01;
+	-moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-10deg);
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-10deg);
+	-o-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-10deg);
+	-ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-10deg);
+	transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(-10deg);
+}
+.cheek-in {
+	width: 240px;
+	height: 210px;
+	border-radius: 50%;
+	background: #feff01;
+	margin-left: -20px;
+}
+.left .cheek {
+	margin-left: -20px;
+}
+.right .cheek {
+	margin-left: 120px;
+	-moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(10deg);
+	-webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(10deg);
+	-o-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(10deg);
+	-ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(10deg);
+	transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(10deg);
+}
+.right .cheek .cheek-in {
+	margin-left: 20px;
+}
+.freckles {
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background-color: #da2b37;
+	position: absolute;
+}
+.left .freckles {
+	left: 30px;
+}
+.freckles:nth-child(1) {
+margin: 40px 0 0 80px;
+	}
+.freckles:nth-child(2) {
+	margin: 120px 0 0 20px;
+}
+.freckles:nth-child(3) {
+	margin: 140px 0 0  140px;
+}
+.lips {
+	border: 10px solid #373435;
+	width: 500px;
+	border-radius: 50%;
+	height: 200px;
+	margin: -90px 85px 0;
+}
+.lips-in {
+	width: 500px;
+	border-radius: 50%;
+	height: 200px;
+	margin-top: -30px;
+	background: #feff01;
+}
+.teeth {
+	width: 200px;
+	margin: 2px 170px;
+}
+.tooth {
+	position: relative;
+	height: 70px;
+	width: 60px;
+	perspective: 100;
+	-webkit-perspective: 100;
+	display: inline-block;
+}
+.tooth:nth-child(1) {
+-moz-transform: scale(1) rotate(4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+.tooth:nth-child(2) {
+	margin-left: 30px;	
+	-moz-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+		-webkit-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -o-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        -ms-transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        transform: scale(1) rotate(-4deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+
+}
+.tooth-in {
+	height: 70px;
+	width: 60px;
+	background-color: #fff;
+	transform: rotateX(25deg);
+	-webkit-transform: rotateX(25deg);
+	border: 10px solid #373435;
+	border-radius: 6px;
+}
+@-webkit-keyframes eyes {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #fff;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-moz-keyframes eyes {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #fff;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-o-keyframes eyes {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #fff;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-ms-keyframes eyes {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #fff;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-webkit-keyframes iris {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #6fc0ed;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-moz-keyframes iris {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #6fc0ed;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-o-keyframes iris {
+   0%, 100% {
+	background-color: #000;
+	border-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #6fc0ed;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-ms-keyframes iris {
+   0%, 100% {
+	background-color: #6fc0ed;
+	border: 10px solid #373435;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #fff;
+	border: 10px solid #373435;
+	z-index: 2;
+   }
+}
+@-webkit-keyframes pupil {
+   0%, 100% {
+	background-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #373435;	z-index: 2;
+   }
+}
+@-moz-keyframes pupil {
+   0%, 100% {
+	background-color: #000;
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #373435;	z-index: 2;
+   }
+}
+@-o-keyframes pupil {
+   0%, 100% {
+	background-color: #000;
+
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #373435;	z-index: 2;
+   }
+}
+@-ms-keyframes pupil {
+   0%, 100% {
+	background-color: #000;
+
+	z-index: 3;
+   }
+   15%, 95% {
+	background-color: #373435;	z-index: 2;
+   }
+}
+</style>
+</head>
+
+<body>
+
+<div class="face">
+	<div class="left">
+		<div class="eyes">
+			<div class="iris">
+				<div class="pupil">
+				</div>
+			</div>
+		</div>
+		<div class="cilia">
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+		</div>
+		<div class="nose">
+			<div class="tip-nose-in">
+			</div>
+		</div>
+		<div class="cheek">
+			<div class="cheek-in">
+				<div class="freckles">
+				</div>
+				<div class="freckles">
+				</div>
+				<div class="freckles">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<div class="eyes">
+			<div class="iris">
+				<div class="pupil">
+				</div>
+			</div>
+		</div>
+		<div class="cilia">
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+		</div>
+		<div class="cheek">
+			<div class="cheek-in">
+				<div class="freckles">
+				</div>
+				<div class="freckles">
+				</div>
+				<div class="freckles">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lips">
+		<div class="lips-in">
+		</div>
+		<div class="teeth">
+			<div class="tooth">
+				<div class="tooth-in">
+				</div>
+			</div>
+			<div class="tooth">
+				<div class="tooth-in">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-24458109-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+/* ]]> */
+</script>
+</body>
+
+</html>
